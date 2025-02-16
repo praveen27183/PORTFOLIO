@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center/cover; /* Background Image */
+            backdrop-filter: blur(8px); /* Blur effect */
+        }
+
+        header {
+            background-color: rgba(0, 123, 255, 0.9);
+            color: white;
+            padding: 20px;
+        }
+
+        .portfolio {
+            margin: 30px auto;
+            max-width: 1100px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .project h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        .project img {
+    width: 100%;
+    height: auto; /* Ensures images maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px;
+}
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project:first-child img { 
+    aspect-ratio: 16 / 9; /* Ensures the image maintains 16:9 ratio */
+    height: 180px; /* Adjust height based on your layout */
+    object-fit: cover; /* Ensures it fills the space without distortion */
+}
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Web Design Portfolio</h1>
+    </header>
+
+    <section class="portfolio">
+        <h2>My Works</h2>
+
+        <h3>Website Development</h3>
+        <div class="grid-container">
+            <div class="project">
+                <img src="/assets/img for webdesign/wb 1" alt="Web Design 1">
+                <h3><a href="https://www.linkedin.com/posts/praveenraj2710_webdesign-figmadesign-roboticsinnovation-activity-7285151260326948868-dMG6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyMaP8BwjLAhpOT4p9QGdZ5QGsNv_wndzU">Website 1</a></h3>
+            </div>
+            <div class="project">
+                <img src="/assets/img for webdesign/wb 2" alt="Web Design 2">
+                <h3><a href="https://www.linkedin.com/posts/praveenraj2710_adobexd-learningjourney-uiuxdesign-activity-7281814230528311297-MhRO?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyMaP8BwjLAhpOT4p9QGdZ5QGsNv_wndzU">Website 2</a></h3>
+            </div>
+            <div class="project">
+                <img src="/assets/img for webdesign/Screenshot (71).png"alt="Web Design 3">
+                <h3><a href="https://www.linkedin.com/posts/praveenraj2710_my-first-project-in-html-css-and-javascript-activity-7265325549059735553-GUaa?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyMaP8BwjLAhpOT4p9QGdZ5QGsNv_wndzU">Website 3</a></h3>
+            </div>
+        </div>
+        
+
+        <h3>Logo Design</h3>
+        <div class="grid-container">
+            <div class="project">
+                <img src="/assets/img for webdesign/logo1" alt="Logo Design 1">
+                <a href="https://www.linkedin.com/posts/praveenraj2710_logodesign-healthcarebranding-figma-activity-7295720874916122625-4mmH?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyMaP8BwjLAhpOT4p9QGdZ5QGsNv_wndzU"><h3>Logo 1</h3></a>
+            </div>
+            <div class="project">
+                <img src="/assets/img for webdesign/logo 2" alt="Logo Design 2">
+                <a href="https://www.linkedin.com/posts/praveenraj2710_excited-to-unveil-the-new-logo-for-lepto-activity-7291296735081967616-hU9p?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyMaP8BwjLAhpOT4p9QGdZ5QGsNv_wndzU"><h3>Logo 2</h3></a>
+            </div>
+            <div class="project">
+                <img src="/assets/img for webdesign/3.jpg"alt="Logo Design 3">
+                <a href="https://www.linkedin.com/posts/praveenraj2710_logodesign-healthcarebranding-figma-activity-7295720874916122625-4mmH?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyMaP8BwjLAhpOT4p9QGdZ5QGsNv_wndzU"><h3>Logo 3</h3></a>
+            </div>
+        </div>
+
+        <h3>Poster Design</h3>
+        <div class="grid-container">
+            <div class="project">
+                <img src=/assets/img for webdesign/polaroid add.png" alt="Poster 1">
+                <h3>Poster 1</h3>
+            </div>
+            <div class="project">
+                <img src="/assets/img for webdesign/diwali.png" alt="Poster 2">
+                <h3>Poster 2</h3>
+            </div>
+            <div class="project">
+                <img src="/assets/img for webdesign/RAINY SEASON PNG.png"alt="Poster 3">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

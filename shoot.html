@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Shoots</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center/cover;
+            backdrop-filter: blur(8px);
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .shoot-section {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+        }
+
+        h2 {
+            color: #00aaff;
+            margin-bottom: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .photo {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photo:hover {
+            transform: scale(1.05);
+        }
+
+        .photo img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .photo h3 {
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Photography Shoots</h1>
+    </header>
+
+    <section class="shoot-section">
+        <h2>General Shoots</h2>
+        <div class="grid-container">
+            <div class="photo">
+                <img src="assets/img/shoot/DSC_0031.JPG" alt="Outdoor Shoot">
+                <h3>Outdoor Shoot</h3>
+            </div>
+            <div class="photo">
+                <img src="assets/img/shoot/DSC_0031.JPG" alt="Fashion Shoot">
+                <h3>Fashion Shoot</h3>
+            </div>
+            <div class="photo">
+                <img src="assets/img/shoot/DSC_0031.JPG" alt="Studio Shoot">
+                <h3>Studio Shoot</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="shoot-section">
+        <h2>Nature Photography</h2>
+        <div class="grid-container">
+            <div class="photo">
+                <img src="assets/img/shoot/DSC_0031.JPG" alt="Sunset View">
+                <h3>Sunset View</h3>
+            </div>
+            <div class="photo">
+                <img src="assets/img/shoot/DSC_0031.JPG" alt="Forest Path">
+                <h3>Forest Path</h3>
+            </div>
+            <div class="photo">
+                <img src="assets/img/shoot/DSC_0031.JPG" alt="Mountain Landscape">
+                <h3>Mountain Landscape</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="shoot-section">
+        <h2>Portrait Photography</h2>
+        <div class="grid-container">
+            <div class="photo">
+                <img src="assets/img/shoot/DSC_0031.JPG" alt="Casual Portrait">
+                <h3>Casual Portrait</h3>
+            </div>
+            <div class="photo">
+                <img src="assets/img/shoot/DSC_0031.JPG" alt="Black & White">
+                <h3>Black & White</h3>
+            </div>
+            <div class="photo">
+                <img src="assets/img/shoot/DSC_0031.JPG" alt="Creative Shot">
+                <h3>Creative Shot</h3>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
